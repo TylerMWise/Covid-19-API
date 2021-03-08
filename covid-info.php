@@ -1,5 +1,5 @@
 <?php
-$contents = file_get_contents("https://tylermwise.com/digital-projects/api/covidstats");
+$contents = file_get_contents("https://api.tylermwise.com/covidstats");
 $data = json_decode($contents);
 ?>
 
