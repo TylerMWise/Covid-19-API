@@ -3,7 +3,7 @@ If you are wanting to have a Covid 19 data page, thise API will certainly help. 
 
 ```php
 <?php
-$contents = file_get_contents("https://tylermwise.com/digital-projects/api/covidstats");
+$contents = file_get_contents("https://api.tylermwise.com/covidstats");
 $data = json_decode($contents);
 ?>
 ```
@@ -17,7 +17,7 @@ Now to get the chosen bit of data you can use any of these bits of code:
 <?php echo $data->deceased; ?>
 <?php echo $data->deceased; ?>
 ```
-Each one echos a different piece of the JSON code. If you want to read what ones there are you can find the JSON names and whats in them here tylermwise.com/digital-projects/api/covidstat
+Each one echos a different piece of the JSON code. If you want to read what ones there are you can find the JSON names and whats in them here api.tylermwise.com/covidstat
 
 
 # Covid World Data API
@@ -25,7 +25,7 @@ If you are wanting to get the Covid 19 data from around the world, you can do it
 
 ```php
 <?php
-$contents = file_get_contents("https://tylermwise.com/digital-projects/api/covidstats");
+$contents = file_get_contents("https://api.tylermwise.com/covidstats");
 $data = json_decode($contents);
 ?>
 ```
@@ -42,7 +42,7 @@ Instead of the scary numbers, you can get the advice on how to stay safe:
 
 ```php
 <?php
-$contents = file_get_contents("https://tylermwise.com/digital-projects/api/covidstats");
+$contents = file_get_contents("https://api.tylermwise.com/covidstats");
 $data = json_decode($contents);
 ?>
 ```
